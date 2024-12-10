@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;background-color:black;color:darkgoldenrod">
+    <h1>jinja Conditional Tags</h1>
+    <!--
+    <h2>if condition</h2>
+    {% if age > 16 %}
+    <h3>Student Name is:{{name}}</h3>
+    <h3>Student age is:{{age}}</h3>
+    {% endif %}
+
+    <h2>ifelse condition</h2>
+    {% if marks >= 358 %}
+    <h3>Student {{name}} is eligable for the Entrence Exam</h3>
+    {% else %}
+    <h3>Student {{name}} is not eligable for the Entrence Exam</h3>
+    {% endif %}
+
+    <h2>if elif condition</h2>
+    {% if marks <= 253 %}
+    <h3>Student {{name}} got the 3rd rank!!</h3>
+    {% elif marks <= 350 %}
+    <h3>Student {{name}} got the 2nd rank!!</h3>
+    {% elif marks >= 450 %}
+    <h3>Student {{name}} got the 1st rank!!Conditional🎉</h3>
+    {% else %}
+    <h3>Student {{name}} got failed😥</h3>
+    {% endif %}
+    
+
+    <h2>nested if condition</h2>
+    {% if age > 16 %}
+         {% if marks > 489 %}
+         <h3>student {{name}} is eligible for the intermediate section-A</h3>
+         {% else %}
+         <h3>student {{name}} is not eligible for the intermediate</h3>
+         {% endif %}
+
+    {% else %}
+        {% if marks <= 450 %}
+        <h3>student {{name}} is eligible not for the intermediate section-B</h3>
+        {% else %}
+        <h3>student {{name}} is not eligible for the intermediate</h3>
+        {% endif %}
+
+    {% endif %}
+-->
+
+    <h2>if elif conditon</h2>
+    {% if h < 12 %}
+    <h2>Current Date and Time is:{{date}}</h2>
+    <h1>{{msg}} Morning!!</h1>
+    <h2>Current Date and Time is:{{date}}</h2>
+    {% elif h < 16 %}
+    <h1>{{msg}} afternoon!!</h1>
+    <h2>Current Date and Time is:{{date}}</h2>
+    {% elif h < 21 %}
+    <h2>Current Date and Time is:{{date}}</h2>
+    <h1>{{msg}} evening!!</h1>
+    {% else %}
+    <h2>Current Date and Time is:{{date}}</h2>
+    <h1>{{msg}} Night!!</h1>
+    {% endif %}
+
+
+</body>
+</html>
